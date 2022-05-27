@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.html" />
+    <link rel="stylesheet" href="productos.html" />
+    <link rel="stylesheet" href="sobre-nosotros.html" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <!--Cabecera-->
+    <div class="grilla-contacto">
+
+    <header>
+        <div class="logo">
+            <h1>Bikes.JS</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="./inicio.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./productos.html">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="./sobre-nosotros.html">SOBRE NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" placeholder="Buscar">
+        </div>
+    
+
+    </header>
+
+    <!--Contenido-->
+
+    <div class="content-form">
+        <h2>Ésta es la sección de contacto</h2>
+        <br>
+        <h3>Completa el siguiente formulario</h3>
+        <form class="formulario">
+            <input type="text" placeholder="First name" name="first name">
+            <input type="text" placeholder="Last name" name="Last name">
+            <input type="email" placeholder="E-mail" name="E-mail">
+            <span> Estado civil </span> <select name="Estado civil" id="estado-civil">
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Viudo">Viudo</option>
+            </select>
+            <br><br>
+            <input type="checkbox" name="newsletter" id="newsletter"><span class="spanNewsletter"> ¿Desea recibir el Newsletter?</span> 
+            <br><br>
+            <textarea name="Comentarios" id="comentario" cols="30" rows="5" placeholder="Comentarios"></textarea>
+            <br>
+            <input type="reset" value="Limpiar formulario" id="reset-formulario">
+            <input type="submit" value="Enviar formulario" id="submit-enviar">
+        </form>
+    </div>
+
+<footer>
+    <div id="footer">
+        <a href="./contacto.html">Contacto</a>
+    </div>
+</footer>
+</body>
+</div>
+</html>
