@@ -31,6 +31,7 @@ h1, .logo{
     padding-top: 0px;
     border-radius: 50%;
     background-color: #222;
+    cursor: pointer;
 }
 .logo > h1{
     font-style:italic;
@@ -50,14 +51,52 @@ h1, .logo{
     padding-top: 30px;
     margin-bottom: 100px;
 }
+.banner{
+    width: 100%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background:linear-gradient( to bottom, #020024,#041cf6);
+    background-position: -200px -200px;
+    margin: 20px auto;
+    width: 95.5%;
+    overflow: hidden;
+}
 .content h2{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
     color: white;
-    font-size: 50px;
-    padding-top:0px;
-    text-shadow: 5px 5px 3px black;
+    font-size: 45px;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
     letter-spacing: 2px;
-    text-align: center;
-    margin-left: 80px;
+    margin: 27px auto;
+    animation: showText 7s linear;
+    
+}
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1, 1);
+        text-shadow: 2px 2px 1px black;
+        opacity: 1;
+        color: white;
+        
+    }
 }
 
 .content h3{
@@ -101,9 +140,15 @@ padding: 10px;
     border-width: 1px 1px 1px 0;
     
 }
-
+/*ANIMACION DEL MENU*/
 .menu a:hover {
-    background: #a6d2f0;
+        color: #05415d;
+        transform: scale(1.2,1.2);
+    background: #628fae;
+}
+.menu ul li a:hover{
+    font-size: 13px;
+    transition: all 0.5s;
 }
 
 .search{
@@ -391,6 +436,4 @@ box-shadow: 0px 0px 3px black;
       background: #333;
   }
 }
-
-
 
