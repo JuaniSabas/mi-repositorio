@@ -1,15 +1,15 @@
 
-header{
+/*header{
     background: linear-gradient( to left, #020024,#07078f,#02108e);
     border-bottom: 1px solid #555;
     box-shadow: 1px 1px 3px #222;
-}
+}*/
 
 
 h1, .logo{
     background: linear-gradient( to right,black,blue);
     letter-spacing: 5px;
-    -webkit-background-clip:text;
+    /*-webkit-background-clip:text;*/
     color: transparent;
 }
 .menu ul li{
@@ -20,7 +20,7 @@ h1, .logo{
     margin: 0px;
 }
 body{
-    background: url("../img/pattern.png");
+    background: url("../img/fondo.jpg");
 }
 
 
@@ -54,10 +54,10 @@ body{
 }
 .banner{
     width: 100%;
-    height: 100px;
-    border: 10px solid white;
+    height: 100%;
+    border: 1px solid white;
     box-shadow: 0px 0px 2px gray;
-    background:linear-gradient( to bottom, #020024,#041cf6);
+    background:linear-gradient( to top, #020024,#0617b7,black);
     background-position: -200px -200px;
     margin: 20px auto;
     width: 95.5%;
@@ -65,7 +65,7 @@ body{
 }
 .content h2{
     display: block;
-    width: 850px;
+    width: 100%;
     font-family: "BebasNeue";
     color: white;
     font-size: 45px;
@@ -73,7 +73,8 @@ body{
     text-shadow: 2px 2px 1px black;
     letter-spacing: 2px;
     margin: 27px auto;
-    animation: showText 7s linear;
+    margin-top: 30px;
+    animation: showText 4s linear;
     
 }
 @keyframes showText{
@@ -101,12 +102,13 @@ body{
 }
 
 .content h3{
-width: 500px auto;
+width: 100%;
 text-align: center;
 border-radius: 7px;
 box-shadow: 1px 1px 4px #ccc inset;
-background: rgb(154, 153, 153);
+background: #333;
 padding: 10px;
+color: white;
 }
 
 .content img{
@@ -280,21 +282,32 @@ box-shadow: 0px 0px 3px black;
     margin: 15px;
     background-color: #e0e0e0;
     border-radius: 6px;
+    text-align: center;
 }
 .content-form input:hover[type="submit"]{
     box-shadow: 0px 0px 5px black;
     transition: all 300ms;
 }
+.content-form{
+    background: url(../img/fondo\ blanco.webp);
+    background-position: 15em;
+    margin-right: 40%;
+    margin-bottom: 10%;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10%;
+}
+
 
 .tabla {
-    background:rgb(220, 219, 219) ;
+    background: #636464;
     display: flex;
     justify-content: center;
     font-size: 40px;
-    width: 25%;
+    width: 100%;
     margin: 20px;
-    margin-left: 800px;
-    padding: 0px;
+    margin-left: auto;
+    padding: 10px;
     border: 3px solid black;
 }
 
@@ -317,7 +330,9 @@ box-shadow: 0px 0px 3px black;
 }
 .imgGroup{
     margin-top: 20px;
+    width: 100%;
 }
+
 .grilla{
     display: grid;
     grid-template-areas: 'header'
@@ -347,7 +362,7 @@ box-shadow: 0px 0px 3px black;
     grid-template-rows: 15% auto 6% ;  
 }
 .content h2{
-    margin-top: 10px;
+    margin-top: 30px;
 }
  
 /*RESPONSIVE DESDE 0PX HASTA 1200px*/
@@ -366,7 +381,7 @@ box-shadow: 0px 0px 3px black;
         margin-top: -15px;
     }
     #footer a{
-        margin-left: 538px;
+        margin-right: 60%;
     }
    
    }
@@ -403,24 +418,23 @@ box-shadow: 0px 0px 3px black;
     margin-left: 480px;
     }
     #footer a{
-        margin-left: 378px;
+        margin-left: 60%;
     }
 }
    @media(max-width:876px) {
     .content{
-        font-size: small;
         margin: 0;
         padding: 122px;
         padding-left:15px;
-        padding-top: 20px;
+        padding-top: 50px;
     }
     .content h2{
-    font-size: 40px;
-    padding-top: 0px;
-    margin-left: -150px;
+    font-size: 35px;
+    padding-top: 5%;
+    margin-left: 0px;
     }
     #footer a{
-        margin-left: 343px;
+        margin-left: 60%;
     }
 }
 @media(max-width:815px) {
@@ -443,6 +457,69 @@ box-shadow: 0px 0px 3px black;
     color: white;
 }
 #carouselExampleDark{
-    margin-left: 500px;
-    margin-bottom: 100px;
+  margin: 12%;
+}
+#navbarTogglerDemo01{
+    justify-content: center;
+}
+.card{
+    width: 600px;
+    height: 600px;
+    color: #37bcf9;
+    background:#333;
+}
+@media(max-width:480px) {
+    .content-form textarea{
+        margin-left: 5px;
+        width: 80%;
+    }
+    .content-form input{
+        margin-left: 5px;
+        width: 80%;
+    }
+    .content-form h2{
+        font-size: 50%;
+    }
+    .content-form input[type="reset"]{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .content-form input[type="submit"]{
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:490px) {
+    #footer a{
+        margin-left: 60%;
+    }
+}
+@media(max-width:1220px) {
+    #footer a{
+        margin-left: 60%;
+    }
+}
+@media(max-width:380px) {
+.tabla {
+height: 200px;
+font-size: 20px;
+}
+}
+#icons{
+    margin-right: 15px;
+}
+.icon-instagram{
+    margin-right: 10px;
+}
+@media(max-width:360px) {
+    #footer a{
+        margin-left: 40%;
+    }
+}
+@media (max-width: 876px){
+.content {
+    margin: 0;
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 61px;
+}
 }
