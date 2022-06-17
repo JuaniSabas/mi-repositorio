@@ -6,7 +6,7 @@
 }*/
 
 
-h1, .logo{
+ .logo{
     background: linear-gradient( to right,black,blue);
     letter-spacing: 5px;
     /*-webkit-background-clip:text;*/
@@ -63,7 +63,7 @@ body{
     width: 95.5%;
     overflow: hidden;
 }
-.content h2{
+.h1SobreNosotros, .bienvenido{
     display: block;
     width: 100%;
     font-family: "BebasNeue";
@@ -74,7 +74,7 @@ body{
     letter-spacing: 2px;
     margin: 27px auto;
     margin-top: 30px;
-    animation: showText 4s linear;
+    
     
 }
 @keyframes showText{
@@ -101,7 +101,7 @@ body{
     }
 }
 
-.content h3{
+/*.content h3,*/ .text{
 width: 100%;
 text-align: center;
 border-radius: 7px;
@@ -210,14 +210,14 @@ color: white;
     background: #555;
     transition: all 300ms;
 }
-.content-form h2{
+.h1Contacto{
     text-align: center;
     font-size: 40px;
     margin-top: 25px;
     text-shadow: 0px 0px 2px black;
     font-style: italic;
 }
-.content-form h3{
+.h2Contacto{
     margin: 10px;
     padding: 15px;
     font-size: 30px;
@@ -361,7 +361,7 @@ box-shadow: 0px 0px 3px black;
     grid-template-columns: auto;
     grid-template-rows: 15% auto 6% ;  
 }
-.content h2{
+.h1SobreNosotros{
     margin-top: 30px;
 }
  
@@ -428,7 +428,14 @@ box-shadow: 0px 0px 3px black;
         padding-left:15px;
         padding-top: 50px;
     }
-    .content h2{
+    .text {
+        width: 100%;
+        font-size: 35px;
+        padding-top: 5%;
+        margin-left: 0px;
+    
+      }
+    .h1SobreNosotros{
     font-size: 35px;
     padding-top: 5%;
     margin-left: 0px;
@@ -463,21 +470,28 @@ box-shadow: 0px 0px 3px black;
     justify-content: center;
 }
 .card{
+    margin-bottom: 20px;
     width: 600px;
     height: 600px;
     color: #37bcf9;
     background:#333;
+}
+.text{
+    width: 100%;
 }
 @media(max-width:480px) {
     .content-form textarea{
         margin-left: 5px;
         width: 80%;
     }
+    .text{
+        width: 100%;
+    }
     .content-form input{
         margin-left: 5px;
         width: 80%;
     }
-    .content-form h2{
+    .h1Contacto{
         font-size: 50%;
     }
     .content-form input[type="reset"]{

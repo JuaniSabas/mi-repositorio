@@ -2,3 +2,48 @@
 $colorblanco: white;
 $colornegro:black;
 $shadowh2:2px 2px 1px $colornegro;
+
+/*Maps*/
+$contenido:(
+    tAlign:center,
+    padding:300px,
+    margin:50px,
+    pTop:30px,
+    mBottom:100px
+);
+
+/*Mixins*/
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+@mixin font($fSize,$fWeight) {
+    font-weight: $fWeight;
+    font-size: $fSize;
+}
+ 
+/*Extends*/
+
+.boton{
+    background-color: yellow;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid gray;
+
+    &:hover{
+        filter: opacity(85%);
+    }
+}
+
+.botonVerde{
+    @extend .boton;
+    background: green;
+    color: white;
+}
+.botonRojo{
+    @extend .boton;
+    background: red;
+    color: white;
+}

@@ -43,15 +43,14 @@ body{
 }
 
 .content{
-    text-align: center;
-    padding: 100px;
-    margin: 50px;
-    padding-top: 30px;
-    margin-bottom: 100px;
+    text-align: map-get($contenido , tAlign);
+    padding: map-get($contenido, padding );
+    margin: map-get($contenido, margin );
+    padding-top: map-get($contenido, pTop ); 
+    margin-bottom: map-get($contenido,mBottom);
 }
 .banner{
-    width: 100%;
-    height: 100%;
+    @include sizes(100%,100%);
     border: 1px solid $colorblanco;
     box-shadow: 0px 0px 2px gray;
     background:linear-gradient( to top, #020024,#0617b7,$colornegro);
@@ -65,8 +64,7 @@ body{
     width: 100%;
     font-family: "BebasNeue";
     color: $colorblanco;
-    font-size: 45px;
-    font-weight: normal;
+    @include font(45px,normal);
     text-shadow: $shadowh2;
     letter-spacing: 2px;
     margin: 27px auto;
