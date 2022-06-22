@@ -1,15 +1,10 @@
 
-/*header{
-    background: linear-gradient( to left, #020024,#07078f,#02108e);
-    border-bottom: 1px solid #555;
-    box-shadow: 1px 1px 3px #222;
-}*/
+
 
 
  .logo{
     background: linear-gradient( to right,black,blue);
     letter-spacing: 5px;
-    /*-webkit-background-clip:text;*/
     color: transparent;
 }
 .menu ul li{
@@ -37,8 +32,6 @@ body{
 .logo > h1{
     font-style:italic;
     font-size: 70px;
-    /*margin-top: 0px;
-    padding-top: 0px;*/
     float: left;
     padding-right: 300px;
     padding-left: 30px;
@@ -47,9 +40,9 @@ body{
 
 .content{
     text-align: center;
-    padding: 100px;
-    margin: 50px;
-    padding-top: 30px;
+    padding: 10px;
+    margin: 10px;
+    padding-top: 10px;
     margin-bottom: 100px;
 }
 .banner{
@@ -101,7 +94,7 @@ body{
     }
 }
 
-/*.content h3,*/ .text{
+.text{
 width: 100%;
 text-align: center;
 border-radius: 7px;
@@ -155,11 +148,9 @@ color: white;
     height: auto;
     width: auto;
     display:flex;
-    /*margin: 10px auto;*/
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 15px;
-    /*box-shadow: 1px 1px 4px #ccc inset;*/
     float: left;
     clear: left;
     margin-left: 750px;
@@ -167,19 +158,16 @@ color: white;
     text-align: center;
 }
 .d-flex input[type="search"]{
-    /*height: 25px;*/
     border: none;
     padding-left: 5px;
     margin-left: 5px;
-    /*border-radius:5px;*/
     background-color: transparent;
     color: #ccc;
     transition: all 300ms;
     text-align: center;
     
 }
-/*.search input[type="search"]:focus{
-    color: #555;*/
+
 #footer {
     
     background-color: black;

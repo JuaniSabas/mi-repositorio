@@ -1,7 +1,7 @@
 {
   "name": "mi-repositorio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina web de venta de bicicletas nuevas de todos los rodados , y accesorios tambien.",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
