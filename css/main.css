@@ -60,6 +60,12 @@ body {
   margin-top: 75px;
   
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .banner {
   height: 100%;
   width: 100%;
@@ -70,6 +76,20 @@ body {
   margin: 35px auto;
   overflow: hidden; 
 }
+
+.h1SobreNosotros, .bienvenido{
+  display: block;
+    width: 100%;
+    font-family: "BebasNeue";
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    margin-top: 65px;
+}
+
 .text{
     width: 100%;
     text-align: center;
@@ -90,24 +110,19 @@ body {
   margin-top: 0px;
   padding: 50px;
  }
-
-@keyframes showText {
-  0% {
-    transform: translateX(-600%) scale(5, 5);
-    opacity: 1; }
-  50% {
-    transform: translateX(600%) scale(5, 5);
-    opacity: 1; }
-  75% {
-    transform: translateX(-600%) scale(5, 5);
-    text-shadow: none;
-    color: transparent;
-    opacity: 0; }
-  100% {
-    transform: translateX(0%) scale(1, 1);
-    text-shadow: 2px 2px 1px black;
-    opacity: 1;
-    color: white; } }
+ .content-productos{
+  margin-top: 100px;
+ }
+#h1Productos{
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 0ch;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bicicletas{
+  color: white;
+}
 
 .content h3 {
   width: 100%;
@@ -177,31 +192,69 @@ body {
   text-align: center; }
 
 
-/*#footer {
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  margin-left: 0; }
-  #footer a {
-    font-size: 30px;
+  .h1Contacto{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 64px;
+    text-shadow: 0px 0px 2px black;
+    font-style: italic;
+}
+.h2Contacto{
     margin: 10px;
-    margin-left: 1000px;
-    padding: 5px;
-    display: block;
-    float: left;
-    background: #222;
-    text-decoration: none;
-    color: #37bcf9;
+    padding: 15px;
+    font-size: 30px;
+    text-decoration:underline;
+}
+  .content-form textarea{
+    margin-left: 15px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-form input[type="reset"]{
+    margin: 15px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+}
+.content-form input:hover[type="reset"]{
+    box-shadow: 0px 0px 5px black;
     transition: all 300ms;
-    border-radius: 5px;
-    border: 2px solid #6e6d6d;
-    text-align: center; }
-    #footer a:hover {
-      background: #555;
-      transition: all 300ms; }*/
-
+}
+.content-form input[type="submit"]{
+    margin: 15px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    text-align: center;
+}
+.content-form input:hover[type="submit"]{
+    box-shadow: 0px 0px 5px black;
+    transition: all 300ms;
+}
+.content-form{
+    background: url(../img/fondo\ blanco.webp);
+    background-position: 15em;
+    margin-right: 0;
+    margin-bottom: 4%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 4%;
+}
+  .content-form input[type="text"]{
+    background-color: antiquewhite;
+    color: black;
+    display: block;
+    margin-left: 45%;
+    margin-bottom: 40px;
+    padding: 7px;
+}
+.content-form input[type="email"]{
+    background-color: antiquewhite;
+    color: black;
+    display: block;
+    margin-left: 45%;
+    margin-bottom: 40px;
+    padding: 7px;
+}
 .content-form h2 {
   text-align: center;
   font-size: 40px;
@@ -281,16 +334,6 @@ height: 100%;
     box-shadow: 0px 0px 5px black;
     transition: all 300ms; }
 
-.tabla {
-  background: #636464;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  width: 100%;
-  margin: 20px;
-  margin-left: auto;
-  padding: 10px;
-  border: 3px solid black; }
 
 .imagesBicis {
   display: flex !important;
@@ -378,6 +421,9 @@ height: 100%;
   margin-right: 0;
 }
 
+
+
+
 .single-awesome-portfolio {
   float: left;
   overflow: hidden;
@@ -408,7 +454,9 @@ height: 100%;
   position: relative;
   
 }
-
+.row{
+  overflow-y: hidden;
+}
 .single-awesome-project:hover .awesome-img > a::after {
   opacity: 1;
 }
@@ -428,6 +476,21 @@ height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.4s;
+}
+body{
+  width: 100%;
+  overflow-x:hidden;
+}
+.fix {
+  overflow: hidden;
+}
+.container{
+  padding: 70px 100px 80px;
+
+}
+.area-padding {
+  padding: 0px 0px 80px;
+  text-align: center;
 }
 
 .add-actions {
@@ -466,11 +529,10 @@ height: 100%;
 
 .project-dec h4 {
   color: #ddd;
-  font-size: 24px;
-  margin-top: -45px;
+  font-size: 15px;
+  margin-top: -120px;
   padding-top: 50%;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 800;
 }
 
@@ -506,20 +568,18 @@ height: 100%;
 }
 *{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+  overflow-x: hidden;
+  
 }
 
 /*Aquí debajo va el FOOTER*/
 
 #footer2{
   width: 100%;
-  padding: 50px 0px;
+  padding: 0px 0px;
   background-image: url(../img/background-footer.svg);
   background-size: cover;
-  /*background-color: #d0f0f8;
-  -webkit-mask-image: url("../Images/background-footer.svg");
-  mask-image: url("../Images/background-footer.svg");
-  -webkit-mask-size: cover;
-  mask-size: cover;*/
+  
 }
 
 .container__footer{
@@ -554,7 +614,6 @@ height: 100%;
   color: #343434;
   font-weight: 700;
 }
-
 .box__footer a{
   margin-top: 10px;
   color: #7a7a7a;
@@ -568,9 +627,20 @@ height: 100%;
 .box__footer a .fab{
   font-size: 20px;
 }
+/*Fin Footer*/
+
+
+.box_encontranos{
+  background-color: #eeeeee;
+  color: white;
+  padding: 2%;
+  opacity: 0.8;
+}
+
 
 .box__copyright{
-  max-width: 1200px;
+  background: #303030;
+  max-width: 100%;
   margin: auto;
   text-align: center;
   padding: 0px 40px;
@@ -586,6 +656,44 @@ height: 100%;
   height: 1px;
   background-color: #7a7a7a;
 }
+.h3Encontranos{
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4072b0;
+}
+.iframe_mapa{
+  width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.encontranos-item ul {
+  margin: 5%;
+  padding: 0;
+  text-align: right;
+}
+.p-3{
+  padding: 1rem;
+}
+.encontranos-item {
+  width: 50%;
+}
+.section-encontranos-div__item, .section-encontranos-div__link {
+  padding: 5% 0;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+iframe{
+  width:50%
+}
+
 /*RESPONSIVE DESDE 0PX HASTA 1200px*/
 @media (max-width: 1292px) {
   .menu ul {
@@ -738,6 +846,40 @@ padding-top: 10px; }
     padding-left: 0px;
     padding-top: 61px; } }
 
+    @media(max-width: 1062px){
+
+.section-encontranos-div__item, .section-encontranos-div__link {
+    font-size: 20px;
+}
+    }
+@media(max-width: 765px){
+  .iframe_mapa{
+  
+    flex-direction: column;
+    
+  }
+  iframe{
+    width: 100%;
+  }
+  .encontranos-item{
+    width: 100%;
+  }
+}
+@media(max-width: 387px){
+  .encontranos-item ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+}
+.encontranos-item ul li{
+font-size: 17px;
+}
+.section-encontranos-div__link {
+  font-size: 17px;
+}
+
+}
  /*Icon Whatsapp*/
 
  .whatsapp {
